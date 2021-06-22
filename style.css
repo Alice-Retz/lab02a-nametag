@@ -1,3 +1,7 @@
+:root {
+    --main-border-radius: 20px;
+}
+
 .name-tag {
     height: 280px;
     width: 400px;
@@ -6,21 +10,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: var(--main-border-radius);
 } 
 .top,
 .bottom {
     background-color: red;
+    width: 100%;
 
 }
 .top {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
 }
 .bottom {
     height:  35px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px var(--main-border-radius) var(--main-border-radius);
 }
 .middle {
     font-family: script;
+    font-size: 75px;
 }
 h1,
 h2 {
