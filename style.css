@@ -1,0 +1,36 @@
+.name-tag {
+    height: 280px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+.top,
+.bottom {
+    background-color: red;
+
+}
+.top {
+    border-radius: 10px 10px 0px 0px;
+}
+.bottom {
+    height:  35px;
+    border-radius: 0px 0px 5px 5px;
+}
+.middle {
+    font-family: script;
+}
+h1,
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+
+}
