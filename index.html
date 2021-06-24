@@ -5,19 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">  
     <title>lab 02</title>
+
 </head>
 
 <body>
     <main>
-        <div class="name-tag">
-            <section class="top">
+        <input type="text" name="name" id="name-input" />
+        <button id="submit-name">Name</button>
+        <input type="text" name="pronouns" id="pronouns-input" />
+        <button id="submit-pronouns">Pronouns</button>
+<p></p><div id="name-tag" class="name-tag">
+            <section id="top-section" class="top">
                 <h1>Hello</h1>
                 <h2>my name is</h2>
             </section>
-            <section class="middle">Alice</section>
-            <section class="bottom"> </section>
+            <section class="middle" id="middle"> <span id="middle-section">Alice</span>
+                <br><span id="pronouns">(she/they)</span>
+            </section>
+            <section id="bottom-section" class="bottom"> </section>
         </div>
+        <p></p>
+        <div id="bottom-buttons"><button id="default">Default</button> 
+            <button id="pan">Pan</button> <button id="bi">Bi</button> 
+            <button id="trans">Trans</button> <select id="font-select">
+                <option>Lobster</option>
+                <option>Viaoda Libre</option>
+                <option>Roboto Mono</option>
+                <option>Dancing Script</option>
+            </select>
+        </div>
+        <p>You've changed your options <a id="clicks">0</a> times</p>
     </main>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
